@@ -1,5 +1,7 @@
 import "./style.css";
 
+const output = document.querySelector("#output");
+
 function fibIt(num) {
   let first = 0;
   let second = 1;
@@ -27,4 +29,4 @@ function fibRec(num) {
   return [...previous, current];
 }
 
-console.log(fibRec(7));
+output.innerHTML = fibIt(5);
